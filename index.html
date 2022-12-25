@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio de André luiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="Bry-logo.png" alt="logo-perfil">
+        <div>
+
+            <ul>
+                <li>
+                    <a target="_blank" href="https://github.com/andreluizlimaa">Github</a>
+                    <!--Github-->
+
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/andre_luiz092/">Instagram</a>
+                    <!--Instagram-->
+                </li>
+
+                <li>
+                    <a target="_blank" href="https://wa.me/8496388678">Whatsap</a>
+                    <!--Whatsap-->
+                </li>
+
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>André Luiz</h1>
+                <h5>Front-end Developer</h5>
+            </div>
+            <div onclick="displayAbout()" id="arrow">
+                <img id="animation" src="arrow-down.png" alt="uma logo de seta para baixo" width="45">
+            </div>
+            <div style="display:none;" id="about">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias necessitatibus quia architecto et consequatur vero laboriosam repellendus reprehenderit ea, aperiam deleniti accusantium, magnam officia quisquam harum voluptatum!
+                    Perferendis, facere!</p>
+            </div>
+            <div class="form">
+                <div class="contato">
+                    <p>deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu email">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
